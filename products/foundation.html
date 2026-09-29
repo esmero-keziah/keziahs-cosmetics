@@ -1,167 +1,142 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquid Foundation | Beauty & Cosmetics</title>
     <link rel="stylesheet" href="../style.css">
-
 </head>
 
-<body style="background-color: #ffb9b9">
+<body>
 
-    <header>
+    <div class="page">
+        <!-- HEADER -->
+        <header class="site-header">
+            <h1>Beauty & Cosmetics</h1>
 
-        <h1 style="text-align: center;">Liquid Foundation</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
+        <!-- MAIN LAYOUT WRAPPER -->
+        <main class="main-layout">
 
-            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
+            <aside class="site-sidebar">
+                <h3>Product Tips</h3>
+                <ul>
+                    <li>Apply skincare before makeup</li>
+                    <li>Choose products for your skin type</li>
+                    <li>Always check the product ingredients</li>
+                </ul>
+            </aside>
 
-                <li><a href="../index.html">Home</a></li>
+            <article class="content-card">
 
-                <li><a href="../about.html">About</a></li>
+                <section>
+                    <h2>Liquid Foundation</h2>
 
-                <li><a href="../contact.html">Contact</a></li>
+                    <img src="https://www.maybelline.com.ph/-/media/project/loreal/brand-sites/mny/apac/ph/products/others/face/liquid-foundation/fit-me-with-aerogel-matte-poreless-liquid-foundation/130-buff-beige.jpg"
+                         alt="Liquid Foundation"
+                         style="display: block; width: 100%; max-width: 230px; height: 250px; object-fit: contain; margin: 15px auto; border-radius: 6px;">
 
-            </ul>
+                    <p>
+                        A lightweight, buildable liquid foundation designed to unify skin tone, blur imperfections, and deliver a natural, skin-like finish. Infused with hydrating hyaluronic acid, it blends seamlessly without feeling heavy or cakey throughout the day.
+                    </p>
 
-        </nav>
+                    <p>
+                        Perfect for daily wear, camera-ready photo sessions, special events, or whenever you want an effortless, glowing base.
+                    </p>
+                </section>
 
-    </header>
+                <section>
+                    <h2>Product Details</h2>
 
-    <main>
+                    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; border: 1px solid var(--border-color);">
+                        <thead>
+                            <tr style="background-color: rgba(255, 255, 255, 0.3);">
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Finish</th>
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Coverage</th>
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Volume</th>
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">Natural Radiant</td>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">Medium to Full</td>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">30 ml</td>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">₱699</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-        <section>
+                <section>
+                    <h2>Why You'll Love It</h2>
 
-            <h2 style="text-align: center;">Liquid Foundation</h2>
+                    <ul style="text-align: left; padding-left: 20px; margin: 15px 0;">
+                        <li>Seamless buildable coverage that hides pores and redness</li>
+                        <li>Hydrating formula that keeps skin fresh and glowy</li>
+                        <li>Long-wear formula resistant to sweat and humidity</li>
+                        <li>Suitable for all skin types and daily use</li>
+                    </ul>
+                </section>
 
-            <img src="https://www.maybelline.com.ph/-/media/project/loreal/brand-sites/mny/apac/ph/products/others/face/liquid-foundation/fit-me-with-aerogel-matte-poreless-liquid-foundation/130-buff-beige.jpg?r
+                <section>
+                    <h2>Order Enquiry</h2>
+                
+                    <form>
+                        <fieldset>
+                            <legend>Quantity & Preferences</legend>
 
-                 alt="Liquid Foundation"
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
 
-                 width="200"
+                            <br><br>
 
-                 height="200"
+                            <label>Delivery Method:</label><br>
+                            <input type="radio" id="standard" name="delivery" value="standard" checked style="width: auto;">
+                            <label for="standard">Standard Delivery</label>
+                            <br>
+                            <input type="radio" id="express" name="delivery" value="express" style="width: auto;">
+                            <label for="express">Express Delivery</label>
 
-                 style="display: block; margin: 0 auto;">
+                            <br><br>
 
-            <br>
+                            <label>Optional Extras:</label><br>
+                            <input type="checkbox" id="gift" name="extras" value="gift" style="width: auto;">
+                            <label for="gift">Gift Wrapping</label>
+                            <br>
+                            <input type="checkbox" id="handling" name="extras" value="handling" style="width: auto;">
+                            <label for="handling">Express Handling</label>
 
-            <p style="text-align: center; max-width: 600px; margin: 15px auto;">
+                            <br><br>
+                
+                            <label for="email">Contact Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </fieldset>
+                
+                        <div style="text-align: center; margin-top: 15px;">
+                            <button type="submit">Send Enquiry</button>
+                        </div>
+                    </form>
+                </section>
 
-                A lightweight, buildable liquid foundation designed to unify skin tone, blur imperfections, and deliver a natural, skin-like finish. Infused with hydrating hyaluronic acid, it blends seamlessly without feeling heavy or cakey throughout the day.
+            </article>
 
-            </p>
+        </main>
 
-            <p style="text-align: center; max-width: 600px; margin: 15px auto;">
+        <footer>
+            <p>&copy; 2026 Beauty & Cosmetics. Effortless glamour for every day.</p>
+        </footer>
 
-                Perfect for daily wear, camera-ready photo sessions, special events, or whenever you want an effortless, glowing base.
-
-            </p>
-
-        </section>
-
-        <section>
-
-            <h2 style="text-align: center;">Product Details</h2>
-
-            <table border="1" style="margin: 0 auto;">
-
-                <tr>
-
-                    <th>Finish</th>
-
-                    <th>Coverage</th>
-
-                    <th>Volume</th>
-
-                    <th>Price</th>
-
-                </tr>
-
-                <tr>
-
-                    <td>Natural Radiant</td>
-
-                    <td>Medium to Full</td>
-
-                    <td>30 ml</td>
-
-                    <td>₱699</td>
-
-                </tr>
-
-            </table>
-
-        </section>
-
-        <section>
-
-            <h2 style="text-align: center;">Why You'll Love It</h2>
-
-            <ul style="list-style-type: none; text-align: center; padding: 0;">
-
-                <li>Seamless buildable coverage that hides pores and redness</li>
-
-                <li>Hydrating formula that keeps skin fresh and glowy</li>
-
-                <li>Long-wear formula resistant to sweat and humidity</li>
-
-                <li>Suitable for all skin types and daily use</li>
-
-            </ul>
-
-        </section>
-
-         <section>
-            <h2 style="text-align: center;">Order Enquiry</h2>
-        
-            <form style="text-align: center;">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="20">
-
-                <br><br>
-        
-                <fieldset>
-                    <legend>Choose a delivery method:</legend>
-        
-                    <input type="radio" id="standard" name="delivery" value="standard">
-                    <label for="standard">Standard Delivery</label>
-        
-                    <input type="radio" id="express" name="delivery" value="express">
-                    <label for="express">Express Delivery</label>
-                </fieldset>
-        
-                <p>Optional Extras:</p>
-        
-                <input type="checkbox" id="gift" name="extras" value="gift">
-                <label for="gift">Gift Wrapping</label>
-        
-                <input type="checkbox" id="handling" name="extras" value="handling">
-                <label for="handling">Express Handling</label>
-        
-                <br><br>
-        
-                <label for="email">Contact Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <br><br>
-        
-                <button type="submit">Send Enquiry</button>
-            </form>
-        </section>
-
-    </main>
-
-    <footer style="text-align: center; padding: 20px;">
-
-        <p>© 2026 Beauty & Cosmetics. Effortless glamour for every day.</p>
-
-    </footer>
+    </div>
 
 </body>
 

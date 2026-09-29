@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -9,118 +8,138 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body style="background-color: #ffb9b9">
+<body>
 
-    <header>
-        <h1 style="text-align: center;">Velvet Matte Lipstick</h1>
+    <div class="page">
+        <!-- HEADER -->
+        <header class="site-header">
+            <h1>Beauty & Cosmetics</h1>
 
-        <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
+        <!-- MAIN LAYOUT WRAPPER -->
+        <main class="main-layout">
 
-        <section>
-            <h2 style="text-align: center;">Velvet Matte Lipstick</h2>
+            <aside class="site-sidebar">
+                <h3>Product Tips</h3>
+                <ul>
+                    <li>Apply skincare before makeup</li>
+                    <li>Choose products for your skin type</li>
+                    <li>Always check the product ingredients</li>
+                </ul>
+            </aside>
 
-            <img src="https://i5.walmartimages.com/seo/NYX-Professional-Makeup-Shout-Loud-Satin-Lipstick-infused-with
-        -mango-and-shea-butter-21ST_3d391b18-5c61-46a0-a8ee-3ee5ab9173db_1.50b68c536ffe3b7760978b8f51fe1015.jpeg"
-                 alt="Velvet Matte Lipstick"
-                 width="200"
-                 height="200"
-                 style="display: block; margin: 0 auto;">
+            <article class="content-card">
 
-            <p style="text-align: center; max-width: 600px; margin: 15px auto;">
-                A luxurious, highly pigmented lipstick that glides on smoothly to deliver a rich, 
-                velvety matte finish. Formulated with hydrating ingredients like jojoba oil and vitamin E, 
-                it keeps your lips feeling weightless, moisturized, and bold all day long.
-            </p>
+                <section>
+                    <h2>Velvet Matte Lipstick</h2>
 
-            <p style="text-align: center; max-width: 600px; margin: 15px auto;">
-                Perfect for everyday wear, evening glam, chic photo shoots, 
-                or whenever you want to complete your outfit with an effortless pop of color.
-            </p>
-        </section>
+                    <img src="https://i5.walmartimages.com/seo/NYX-Professional-Makeup-Shout-Loud-Satin-Lipstick-infused-with-mango-and-shea-butter-21ST_3d391b18-5c61-46a0-a8ee-3ee5ab9173db_1.50b68c536ffe3b7760978b8f51fe1015.jpeg"
+                         alt="Velvet Matte Lipstick"
+                         style="display: block; width: 100%; max-width: 230px; height: 250px; object-fit: contain; margin: 15px auto; border-radius: 6px;">
 
-        <section>
-            <h2 style="text-align: center;">Product Details</h2>
+                    <p>
+                        A luxurious, highly pigmented lipstick that glides on smoothly to deliver a rich, 
+                        velvety matte finish. Formulated with hydrating ingredients like jojoba oil and vitamin E, 
+                        it keeps your lips feeling weightless, moisturized, and bold all day long.
+                    </p>
 
-            <table border="1" style="margin: 0 auto;">
-                <tr>
-                    <th>Finish</th>
-                    <th>Shade / Color</th>
-                    <th>Net Weight</th>
-                    <th>Price</th>
-                </tr>
+                    <p>
+                        Perfect for everyday wear, evening glam, chic photo shoots, 
+                        or whenever you want to complete your outfit with an effortless pop of color.
+                    </p>
+                </section>
 
-                <tr>
-                    <td>Velvet Matte</td>
-                    <td>Classic Rose</td>
-                    <td>3.8 g</td>
-                    <td>₱199</td>
-                </tr>
-            </table>
-        </section>
+                <section>
+                    <h2>Product Details</h2>
 
-        <section>
-            <h2 style="text-align: center;">Why You'll Love It</h2>
+                    <table style="width: 100%; border-collapse: collapse; margin: 15px 0; border: 1px solid var(--border-color);">
+                        <thead>
+                            <tr style="background-color: rgba(255, 255, 255, 0.3);">
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Finish</th>
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Shade / Color</th>
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Net Weight</th>
+                                <th style="padding: 8px; border: 1px solid var(--border-color);">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">Velvet Matte</td>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">Classic Rose</td>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">3.8 g</td>
+                                <td style="padding: 8px; border: 1px solid var(--border-color);">₱199</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-            <ul style="list-style-type: none; text-align: center; padding: 0;">
-                <li>Intense, full-coverage color payoff in one swipe</li>
-                <li>Hydrating, non-drying formula infused with vitamin E</li>
-                <li>Long-wearing and smudge-resistant throughout the day</li>
-                <li>Cruelty-free and suitable for all skin tones</li>
-            </ul>
-        </section>
+                <section>
+                    <h2>Why You'll Love It</h2>
 
-         <section>
-            <h2 style="text-align: center;">Order Enquiry</h2>
-        
-            <form style="text-align: center;">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="20">
+                    <ul style="text-align: left; padding-left: 20px; margin: 15px 0;">
+                        <li>Intense, full-coverage color payoff in one swipe</li>
+                        <li>Hydrating, non-drying formula infused with vitamin E</li>
+                        <li>Long-wearing and smudge-resistant throughout the day</li>
+                        <li>Cruelty-free and suitable for all skin tones</li>
+                    </ul>
+                </section>
 
-                <br><br>
-        
-                <fieldset>
-                    <legend>Choose a delivery method:</legend>
-        
-                    <input type="radio" id="standard" name="delivery" value="standard">
-                    <label for="standard">Standard Delivery</label>
-        
-                    <input type="radio" id="express" name="delivery" value="express">
-                    <label for="express">Express Delivery</label>
-                </fieldset>
-        
-                <p>Optional Extras:</p>
-        
-                <input type="checkbox" id="gift" name="extras" value="gift">
-                <label for="gift">Gift Wrapping</label>
-        
-                <input type="checkbox" id="handling" name="extras" value="handling">
-                <label for="handling">Express Handling</label>
-        
-                <br><br>
-        
-                <label for="email">Contact Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <br><br>
-        
-                <button type="submit">Send Enquiry</button>
-            </form>
-        </section>
+                <section>
+                    <h2>Order Enquiry</h2>
+                
+                    <form>
+                        <fieldset>
+                            <legend>Quantity & Preferences</legend>
 
-    </main>
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
 
-    <footer style="text-align: center; padding: 20px;">
-        <p>© 2026 Beauty & Cosmetics. Effortless glamour for every day.</p>
-    </footer>
+                            <br><br>
+
+                            <label>Delivery Method:</label><br>
+                            <input type="radio" id="standard" name="delivery" value="standard" checked style="width: auto;">
+                            <label for="standard">Standard Delivery</label>
+                            <br>
+                            <input type="radio" id="express" name="delivery" value="express" style="width: auto;">
+                            <label for="express">Express Delivery</label>
+
+                            <br><br>
+
+                            <label>Optional Extras:</label><br>
+                            <input type="checkbox" id="gift" name="extras" value="gift" style="width: auto;">
+                            <label for="gift">Gift Wrapping</label>
+                            <br>
+                            <input type="checkbox" id="handling" name="extras" value="handling" style="width: auto;">
+                            <label for="handling">Express Handling</label>
+
+                            <br><br>
+                
+                            <label for="email">Contact Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </fieldset>
+                
+                        <div style="text-align: center; margin-top: 15px;">
+                            <button type="submit">Send Enquiry</button>
+                        </div>
+                    </form>
+                </section>
+
+            </article>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Beauty & Cosmetics. Effortless glamour for every day.</p>
+        </footer>
+
+    </div>
 
 </body>
 

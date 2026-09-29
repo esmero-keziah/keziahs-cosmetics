@@ -7,94 +7,109 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="background-color: #ffb9b9; font-family: Arial, sans-serif; color: #333;">
+    <div class="page">
+        <!-- HEADER -->
+        <header class="site-header">
+            <h1>Contact Us</h1>
 
-    <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: center; gap: 20px; padding: 0;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- WRAPPER FOR SIDEBAR + MAIN CONTENT -->
+        <main class="main-layout">
 
-        <h1 style="text-align: center;">Contact Us</h1>
+            <aside class="site-sidebar">
+                <h3>Product Tips</h3>
+                <ul>
+                    <li>Apply skincare before makeup</li>
+                    <li>Choose products for your skin type</li>
+                    <li>Always check the product ingredients</li>
+                </ul>
+            </aside>
 
-    </header>
+            <article class="content-card">
 
-    <main>
+                <p style="text-align: center;">
+                    Have a question or want to try our latest makeup collection in person? 
+                    We would love to hear from you!
+                </p>
 
-        <p style="text-align: center;">
-            Have a question or want to try our latest makeup collection in person? 
-            We would love to hear from you!
-        </p>
+                <p style="text-align: center;">📍 Location: Pasay, Philippines</p>
 
-        <p style="text-align: center;">📍 Location: Pasay, Philippines</p>
+                <p style="text-align: center;">📞 Phone: 0925-152-1897</p>
 
-        <p style="text-align: center;">📞 Phone: 0925-152-1897</p>
+                <p style="text-align: center;">📧 Email: yourcosmetics@gmail.com</p>
 
-        <p style="text-align: center;">📧 Email: yourcosmetics@gmail.com</p>
+                <h2 style="text-align: center;">Opening Hours</h2>
 
-        <h2 style="text-align: center;">Opening Hours</h2>
+                <p style="text-align: center;">Monday - Friday: 9:00 AM - 10:00 PM</p>
 
-        <p style="text-align: center;">Monday - Friday: 9:00 AM - 10:00 PM</p>
+                <p style="text-align: center;">Saturday - Sunday: 8:00 AM - 10:00 PM</p>
 
-        <p style="text-align: center;">Saturday - Sunday: 8:00 AM - 10:00 PM</p>
+                <div style="text-align: center;">
+                    <p>Follow us on social media for new product launches, shade reveals, beauty tips, and exclusive offers!</p>
+                    <p>Instagram: @keziahscosmetics</p>
+                    <p>TikTok: @keziahscosmetics</p>
+                    <p>Facebook: @keziahscosmetics</p>
+                    <p>YouTube: @keziahscosmetics</p>     
+                </div>
 
-        <p style="text-align: center;">
-            Follow us on social media for new product launches, shade reveals, beauty tips, and exclusive offers!
-            <p style="text-align: center;"> Instagram: @keziahscosmetics </p>
-            <p style="text-align: center;"> TikTok: @keziahscosmetics </p>
-            <p style="text-align: center;"> Facebook: @keziahscosmetics </p>
-            <p style="text-align: center;"> YouTube: @keziahscosmetics </p>     
-       </p>
+                <section>
+                    <h2 style="text-align: center;">Send Me a Message</h2>
+                
+                    <form>
+                        <fieldset>
+                            <legend>Your details</legend>
+                
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <br><br>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <br><br>
+                
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choose a subject</option>
+                                <option value="product-question">Product question</option>
+                                <option value="order-status">Order status</option>
+                                <option value="wholesale-enquiry">Wholesale enquiry</option>
+                                <option value="other">Something else</option>
+                            </select>
+                
+                            <br><br>
+                
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                
+                        </fieldset>
+                
+                        <div style="text-align: center; margin-top: 15px;">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </section>
 
-    </main>
-    <section>
-        <h2 style="text-align: center;">Send Me a Message</h2>
-    
-        <form>
-            <fieldset>
-                <legend>Your details</legend>
-    
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <br><br>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <br><br>
-    
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="">Choose a subject</option>
-                    <option value="">Product question</option>
-                    <option value="suggest-place">Order status</option>
-                    <option value="correct-detail">Wholesale enquiry</option>
-                    <option value="other">Something else</option>
-                </select>
-    
-                <br><br>
-    
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required
-                    style="width: 100%; box-sizing: border-box;"></textarea>
-    
-            </fieldset>
-    
-            <div style="text-align: center; margin-top: 15px;">
-                <button type="submit">Send message</button>
-            </div>
-        </form>
-    </section>
+            </article>
 
-    <footer>
-        <p style="text-align: center;">&copy; 2026 Cosmetics. All rights reserved.</p>
-    </footer>
+        </main>
+
+        <footer>
+            <p style="text-align: center;">&copy; 2026 Cosmetics. All rights reserved.</p>
+        </footer>
+
+    </div>
 
 </body>
 
