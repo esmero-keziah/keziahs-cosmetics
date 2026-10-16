@@ -27,14 +27,15 @@
         <!-- MAIN LAYOUT WRAPPER -->
         <main class="main-layout">
 
-            <aside class="site-sidebar">
-                <h3>Product Tips</h3>
-                <ul>
-                    <li>Apply skincare before makeup</li>
-                    <li>Choose products for your skin type</li>
-                    <li>Always check the product ingredients</li>
-                </ul>
-            </aside>
+         <aside class="site-sidebar">
+             <h3>Product Details</h3>
+                <p>Price: ₱<span id="product-price" data-price="199">199.00</span></p>
+                <span id="product-stock-count" data-stock="7" style="display:none;"></span>
+
+                <p id="stock-status">Checking stock...</p>
+                <p id="order-summary">Calculating total...</p>
+                <p id="delivery-check">Calculating delivery fee...</p>
+        </aside>
 
             <article class="content-card">
 
@@ -141,6 +142,7 @@
 
     </div>
 
+    
+<script src="../script.js"></script>
 </body>
-
 </html>
